@@ -2,13 +2,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MainClassTest {
-
     @Test
-    public void testGetLocalNumber() {
+    public void testGetClassNumber() {
         MainClass main = new MainClass();
-        int actual = main.getLocalNumber();
-        int expected = 14;
+        int actual = main.getClassNumber();
+        int comparedNum = 45;
 
-        Assert.assertTrue("Actual and expected results do not match",actual == expected);
+        Assert.assertTrue("Actual is less or equals compared number",actual > comparedNum);
     }
 }
